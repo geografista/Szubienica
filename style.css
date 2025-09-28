@@ -12,7 +12,6 @@ body
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 100%);
-  animation: drift 60s linear infinite;
   pointer-events: none;
   z-index: 0;
 }
@@ -178,6 +177,7 @@ body
   min-height: 600px; /* zapobiega przeskokom */
   position: relative;
 	width:900px;
+  max-width: 100%;
   border: 2px solid #00C000;
   box-shadow: 0 0 20px #00C000;
 }
@@ -266,4 +266,108 @@ body
 .reset:hover
 {
 	color:white;
+}
+
+@media screen and (max-width: 916px) {
+ 
+
+  #start h1 {
+    font-size: 80px;
+}
+#start button {
+    font-size: 40px;
+}
+
+#grafika-startowa{
+  max-width: 100% !important;
+  width: 90%;
+  margin: 0 auto;
+}
+   #wybor-kategorii {
+    margin-top: 0;
+}
+   #wybor-kategorii h2 {
+    font-size: 80px;
+    margin: 0 auto 20px auto;
+}
+#kolumny-kategorii{
+
+}
+#specjalistyczne-kategorie{
+text-align: center;
+}
+.przycisk-kategorii{
+  min-width: 300px;
+  width: min-content;
+  max-width: 100%;
+  font-size: 40px;
+  margin: 10px 0;
+}
+.fog-layer{
+
+  max-width: 100%;
+}
+#pojemnik{
+  width:100%;
+max-width: 100%;
+
+
+}
+#kategoria-info{
+max-width: 100%;
+font-size: 40px;
+
+}
+#plansza{
+
+  max-width: 100%;
+}
+ #szubienica{
+  display:block;
+float:inherit;
+margin: 30px auto;
+ }
+
+#alfabet{
+  display: block;
+float:inherit;
+min-width: 532px;
+width: min-content;
+margin: 30px auto;
+font-size: 50px;
+line-height: 50px;
+}
+.litera{
+width:50px;
+height: 50px;
+
+}
+
+#przycisk-powrotu{
+max-width: 100%;
+font-size: 40px;
+margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 600px) {
+#pojemnik{
+}
+#alfabet{
+  display: block;
+float:inherit;
+min-width: 427px;
+width: min-content;
+margin: 30px auto;
+font-size: 35px;
+line-height: 35px;
+}
+.litera{
+width:35px;
+height: 35px;
+
+}
+
+
+
+
 }
