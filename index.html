@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Szubienica</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="SZ_2.css" type="text/css" />
+  <script src="SZ_2.js" defer></script>
+  <audio id="muzyka" src="motyw.wav" loop></audio>
+</head>
+
+<body>
+  <div class="fog-layer"></div>
+
+  <!-- Ekran startowy -->
+  <div id="start">
+    <img src="img/SZUBIENICA.png" alt="Szubienica" id="grafika-startowa" />
+    <h1>Szubienica</h1>
+    <button onclick="pokazWyborKategorii()">Rozpocznij grę</button>
+  </div>
+
+  <!-- Plansza wyboru kategorii -->
+  <div id="wybor-kategorii" style="display:none;">
+    <h2>Wybierz kategorię</h2>
+    <div id="kolumny-kategorii">
+      <div class="kolumna" id="klasyczne-kategorie"></div>
+      <div class="kolumna" id="specjalistyczne-kategorie"></div>
+    </div>
+  </div>
+
+
+  <!-- Plansza gry -->
+  <div id="pojemnik" style="display:none;">
+    <div id="kategoria-info"></div>
+    <div id="plansza"></div>
+    <div id="szubienica"><img src="img/s0.jpg" alt="" /></div>
+    <div id="alfabet"></div>
+    <div style="text-align:center; margin-top:30px;">
+      <button onclick="powrotDoWyboru()" id="przycisk-powrotu">Wybierz inną kategorię</button>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</body>
+
+</html>

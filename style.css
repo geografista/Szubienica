@@ -1,0 +1,269 @@
+body
+{
+	background-color: #000000;
+	color: lightgray;
+	font-size: 28px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+}
+
+.fog-layer {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 100%);
+  animation: drift 60s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes drift {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+#kolumny-kategorii {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.kolumna {
+  width: 300px;
+}
+
+.przycisk-kategorii {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition: 0.3s;
+}
+
+.przycisk-kategorii:hover {
+  background-color: #005500;
+  color: #00FF00;
+  border-color: #00FF00;
+}
+
+#kontener-alfabetu {
+  
+  border: 2px solid #00C000;
+  padding: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 0 15px #00C000;
+  border-radius: 10px;
+}
+
+#startGry {
+    margin-top: 20px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  font-family: 'Inconsolata', monospace;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+#kategoria {
+    margin-top: 20px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  font-family: 'Inconsolata', monospace;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#kategoria-info {
+  margin-top: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #00C000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#wybor-kategorii {
+  text-align: center;
+  padding: 20px;
+  background-color: #001100;
+  border: 2px solid #00C000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00C000;
+  width: fit-content;
+  margin: 40px auto;
+  font-family: 'Inconsolata', monospace;
+  color: #00C000;
+}
+
+
+
+#grafika-startowa {
+  max-width: 600px;
+  width: 90%;
+  margin-bottom: 40px;
+  border: 2px solid #00C000;
+  box-shadow: 0 0 20px #00C000;
+}
+
+
+#start {
+  text-align: center;
+  margin-top: 100px;
+  color: #0f0;
+}
+
+#start h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #0f0;
+}
+
+#start button {
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition: 0.3s;
+}
+
+#start button:hover {
+  background-color: #005500;
+  color: #00FF00;
+  border-color: #00FF00;
+}
+#szubienica img, #przycisk-powrotu {
+  will-change: opacity, transform;
+}
+
+.przycisk-kategorii {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 22px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition: 0.3s;
+}
+
+.przycisk-kategorii:hover {
+  background-color: #005500;
+  color: #00FF00;
+  border-color: #00FF00;
+}
+
+#pojemnik
+{
+   margin: 0 auto;
+  min-height: 600px; /* zapobiega przeskokom */
+  position: relative;
+	width:900px;
+  border: 2px solid #00C000;
+  box-shadow: 0 0 20px #00C000;
+}
+
+#plansza
+{
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 48px;
+	min-height: 60px;
+}
+
+#szubienica
+{
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+#szubienica img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+#przycisk-powrotu {
+  margin: 20px 0 20px 0;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #003300;
+  color: #00C000;
+  border: 2px solid #00C000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+#przycisk-powrotu:hover {
+  background-color: #005500;
+  color: #00FF00;
+  border-color: #00FF00;
+}
+
+#alfabet
+{
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.litera
+{
+	width: 30px;
+	height: 30px;
+	text-align:center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+}
+
+.reset
+{
+	color:green;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+.reset:hover
+{
+	color:white;
+}
