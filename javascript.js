@@ -304,7 +304,7 @@ function rozpocznijGreZKategoria(nazwa, typ) {
   document.getElementById("pojemnik").style.display = "block";
   document.getElementById("kategoria-info").innerHTML =
     '<span style="color:#00C000;">Kategoria:</span> ' + nazwa;
-  document.getElementById("szubienica").innerHTML = '<img src="img/s0.jpg" alt="" />';
+  document.getElementById("szubienica").innerHTML = '<img src="s0.jpg" alt="" />';
   start();
 }
 
@@ -322,7 +322,7 @@ function restart() {
 
   document.getElementById("kategoria-info").innerHTML =
     '<span style="color:#00C000;">Kategoria:</span> ' + aktualnaKategoria;
-  document.getElementById("szubienica").innerHTML = '<img src="img/s0.jpg" alt="" />';
+  document.getElementById("szubienica").innerHTML = '<img src="s0.jpg" alt="" />';
   document.getElementById("alfabet").innerHTML = "";
   start();
 }
@@ -498,7 +498,7 @@ function sprawdz(nr)
 		
 		//skucha
 		ile_skuch++;
-		var obraz = "img/s"+ ile_skuch + ".jpg";
+		var obraz = "s"+ ile_skuch + ".jpg";
 		document.getElementById("szubienica").innerHTML = '<img src="'+obraz+'" alt="" />';
 	}
 	
