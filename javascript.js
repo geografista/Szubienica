@@ -509,7 +509,7 @@ function sprawdz(nr)
 }
 	//przegrana
 	if (ile_skuch>=9){
-	document.getElementById("alfabet").innerHTML  = '<span style="color: red">Przegrana! Prawidłowe hasło:<br> </span>'+haslo+'<br /><br /><span class="reset" onclick="restart()">JESZCZE RAZ?</span>';
+	document.getElementById("alfabet").innerHTML  = '<span style="color: red">Przegrana! Podałeś nieprawidłowe hasło!<br> </span><br /><br /><span class="reset" onclick="restart()">JESZCZE RAZ?</span>';
 	boo.play();
 }
 }
