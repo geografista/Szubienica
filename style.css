@@ -95,7 +95,7 @@ body
 
 #wybor-kategorii {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #001100;
   border: 2px solid #00C000;
   border-radius: 10px;
@@ -272,6 +272,7 @@ body
  
 
   #start h1 {
+    max-width: 100%;
     font-size: 80px;
 }
 #start button {
@@ -290,9 +291,7 @@ body
     font-size: 80px;
     margin: 0 auto 20px auto;
 }
-#kolumny-kategorii{
 
-}
 #specjalistyczne-kategorie{
 text-align: center;
 }
@@ -370,4 +369,75 @@ height: 35px;
 
 
 
+}
+@media screen and (max-width: 480px) {
+#pojemnik{
+}
+#alfabet{
+  display: block;
+float:inherit;
+min-width: 357px;
+width: min-content;
+margin: 30px auto;
+font-size: 25px;
+line-height: 25px;
+}
+.litera{
+width:25px;
+height: 25px;
+
+}
+ #szubienica{
+  display:block;
+float:inherit;
+margin: 30px auto;
+width:100%;
+ }
+#start h1 {
+    max-width: 100%;
+    font-size: 60px;
+}
+#start button {
+    font-size: 40px;
+}
+
+
+}
+@media screen and (max-width: 380px) {
+#pojemnik{
+}
+#alfabet{
+  display: block;
+float:inherit;
+min-width: 322px;
+width: min-content;
+margin: 30px auto;
+font-size: 20px;
+line-height: 20px;
+}
+.litera{
+width: 20px;px;
+height: 20px;
+
+}
+ #szubienica{
+  display:block;
+float:inherit;
+margin: 30px auto;
+width:100%;
+ }
+#start h1 {
+    max-width: 100%;
+    font-size: 46px;
+}
+#start button {
+    font-size: 36px;
+}
+#wybor-kategorii {
+  max-width: 100%;
+}
+   #wybor-kategorii h2 {
+    font-size: 50px;
+    margin: 0 auto 20px auto;
+}
 }
