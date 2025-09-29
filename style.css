@@ -1,24 +1,33 @@
-body
-{
-	background-color: #000000;
-	color: lightgray;
-	font-size: 28px;
-	font-family: 'Inconsolata';
-	font-weight: 700;
+body {
+  background-color: #000000;
+  color: lightgray;
+  font-size: 28px;
+  font-family: "Inconsolata";
+  font-weight: 700;
 }
 
 .fog-layer {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   pointer-events: none;
   z-index: 0;
 }
 
 @keyframes drift {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(100px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
 
 #kolumny-kategorii {
@@ -39,46 +48,45 @@ body
   padding: 15px;
   font-size: 20px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
+  color: #00c000;
+  border: 2px solid #00c000;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   transition: 0.3s;
 }
 
 .przycisk-kategorii:hover {
   background-color: #005500;
-  color: #00FF00;
-  border-color: #00FF00;
+  color: #00ff00;
+  border-color: #00ff00;
 }
 
 #kontener-alfabetu {
-  
-  border: 2px solid #00C000;
+  border: 2px solid #00c000;
   padding: 20px;
   margin: 20px auto;
   width: fit-content;
-  box-shadow: 0 0 15px #00C000;
+  box-shadow: 0 0 15px #00c000;
   border-radius: 10px;
 }
 
 #startGry {
-    margin-top: 20px;
+  margin-top: 20px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
-  font-family: 'Inconsolata', monospace;
+  color: #00c000;
+  border: 2px solid #00c000;
+  font-family: "Inconsolata", monospace;
   padding: 8px;
   font-size: 18px;
   border-radius: 6px;
 }
 #kategoria {
-    margin-top: 20px;
+  margin-top: 20px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
-  font-family: 'Inconsolata', monospace;
+  color: #00c000;
+  border: 2px solid #00c000;
+  font-family: "Inconsolata", monospace;
   padding: 8px;
   font-size: 18px;
   border-radius: 6px;
@@ -86,9 +94,9 @@ body
 
 #kategoria-info {
   margin-top: 20px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 20px;
-  color: #00C000;
+  color: #00c000;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -97,25 +105,22 @@ body
   text-align: center;
   padding: 10px;
   background-color: #001100;
-  border: 2px solid #00C000;
+  border: 2px solid #00c000;
   border-radius: 10px;
-  box-shadow: 0 0 15px #00C000;
+  box-shadow: 0 0 15px #00c000;
   width: fit-content;
   margin: 40px auto;
-  font-family: 'Inconsolata', monospace;
-  color: #00C000;
+  font-family: "Inconsolata", monospace;
+  color: #00c000;
 }
-
-
 
 #grafika-startowa {
   max-width: 600px;
   width: 90%;
   margin-bottom: 40px;
-  border: 2px solid #00C000;
-  box-shadow: 0 0 20px #00C000;
+  border: 2px solid #00c000;
+  box-shadow: 0 0 20px #00c000;
 }
-
 
 #start {
   text-align: center;
@@ -133,20 +138,21 @@ body
   padding: 15px 40px;
   font-size: 20px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
+  color: #00c000;
+  border: 2px solid #00c000;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   transition: 0.3s;
 }
 
 #start button:hover {
   background-color: #005500;
-  color: #00FF00;
-  border-color: #00FF00;
+  color: #00ff00;
+  border-color: #00ff00;
 }
-#szubienica img, #przycisk-powrotu {
+#szubienica img,
+#przycisk-powrotu {
   will-change: opacity, transform;
 }
 
@@ -157,47 +163,44 @@ body
   padding: 15px;
   font-size: 22px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
+  color: #00c000;
+  border: 2px solid #00c000;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   transition: 0.3s;
 }
 
 .przycisk-kategorii:hover {
   background-color: #005500;
-  color: #00FF00;
-  border-color: #00FF00;
+  color: #00ff00;
+  border-color: #00ff00;
 }
 
-#pojemnik
-{
-   margin: 0 auto;
+#pojemnik {
+  margin: 0 auto;
   min-height: 600px; /* zapobiega przeskokom */
   position: relative;
-	width:900px;
+  width: 900px;
   max-width: 100%;
-  border: 2px solid #00C000;
-  box-shadow: 0 0 20px #00C000;
+  border: 2px solid #00c000;
+  box-shadow: 0 0 20px #00c000;
 }
 
-#plansza
-{
-	width: 900px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-align: center;
-	font-size: 48px;
-	min-height: 60px;
+#plansza {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 48px;
+  min-height: 60px;
 }
 
-#szubienica
-{
-	float: left; 
-	width: 450px;
-	text-align: center;
-	min-height: 280px;
+#szubienica {
+  float: left;
+  width: 450px;
+  text-align: center;
+  min-height: 280px;
 }
 #szubienica img {
   display: block;
@@ -206,17 +209,16 @@ body
   transition: opacity 0.3s ease-in-out;
 }
 
-
 #przycisk-powrotu {
   margin: 20px 0 20px 0;
   padding: 12px 30px;
   font-size: 18px;
   background-color: #003300;
-  color: #00C000;
-  border: 2px solid #00C000;
+  color: #00c000;
+  border: 2px solid #00c000;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   transition: 0.3s;
   position: relative;
   z-index: 2;
@@ -224,290 +226,261 @@ body
 
 #przycisk-powrotu:hover {
   background-color: #005500;
-  color: #00FF00;
-  border-color: #00FF00;
+  color: #00ff00;
+  border-color: #00ff00;
 }
 
-#alfabet
-{
-	float: left; 
-	width: 450px;
-	text-align: center;
-	min-height: 280px;
+#alfabet {
+  float: left;
+  width: 450px;
+  text-align: center;
+  min-height: 280px;
 }
 
-.litera
-{
-	width: 30px;
-	height: 30px;
-	text-align:center;
-	padding: 5px;
-	margin: 5px;
-	border: 3px solid gray;
-	float: left;
-	cursor: pointer;
-	border-radius: 15px;
+.litera {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid gray;
+  float: left;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
-.litera:hover
-{
-	background-color: #222222;
-	color: white;
-	border: 3px solid white;
+.litera:hover {
+  background-color: #222222;
+  color: white;
+  border: 3px solid white;
 }
 
-.reset
-{
-	color:green;
-	cursor: pointer;
-	font-size: 48px;
+.reset {
+  color: green;
+  cursor: pointer;
+  font-size: 48px;
 }
 
-.reset:hover
-{
-	color:white;
+.reset:hover {
+  color: white;
 }
 
 @media screen and (max-width: 916px) {
- 
-
   #start h1 {
     max-width: 100%;
     font-size: 80px;
-}
-#start button {
+  }
+  #start button {
     font-size: 40px;
-}
+  }
 
-#grafika-startowa{
-  max-width: 100% !important;
-  width: 90%;
-  margin: 0 auto;
-}
-   #wybor-kategorii {
+  #grafika-startowa {
+    max-width: 100% !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #wybor-kategorii {
     margin-top: 0;
-}
-#wybor-kategorii h2 {
-  font-size: 40px;
-  padding: 10px;
-  margin: 20px;
-}
+  }
+  #wybor-kategorii h2 {
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+  }
 
+  #specjalistyczne-kategorie {
+    text-align: center;
+  }
+  .przycisk-kategorii {
+    min-width: 300px;
+    width: min-content;
+    max-width: 100%;
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .fog-layer {
+    max-width: 100%;
+  }
+  #pojemnik {
+    width: 100%;
+    height: min-content;
+    max-width: 100%;
+  }
+  #kategoria-info {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  #plansza {
+    max-width: 100%;
+  }
+  #szubienica {
+    display: block;
+    float: inherit;
+    margin: 30px auto;
+  }
 
-#specjalistyczne-kategorie{
-text-align: center;
-}
-.przycisk-kategorii{
-  min-width: 300px;
-  width: min-content;
-  max-width: 100%;
-  font-size: 26px;
-  margin: 10px 0;
-}
-.fog-layer{
+  #alfabet {
+    display: block;
+    float: inherit;
+    min-width: 532px;
+    width: min-content;
+    margin: 30px auto;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .litera {
+    width: 50px;
+    height: 50px;
+  }
 
-  max-width: 100%;
-}
-#pojemnik{
-  width:100%;
-  height: min-content;
-max-width: 100%;
-
-
-}
-#kategoria-info{
-max-width: 100%;
-font-size: 40px;
-
-}
-#plansza{
-
-  max-width: 100%;
-}
- #szubienica{
-  display:block;
-float:inherit;
-margin: 30px auto;
- }
-
-#alfabet{
-  display: block;
-float:inherit;
-min-width: 532px;
-width: min-content;
-margin: 30px auto;
-font-size: 50px;
-line-height: 50px;
-}
-.litera{
-width:50px;
-height: 50px;
-
-}
-
-#przycisk-powrotu{
-max-width: 100%;
-font-size: 40px;
-margin-bottom: 30px;
-}
+  #przycisk-powrotu {
+    max-width: 100%;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
-#pojemnik{
-  width:100%;
-  height: min-content;
-}
-#alfabet{
-  display: block;
-float:inherit;
-min-width: 427px;
-width: min-content;
-margin: 30px auto;
-font-size: 35px;
-line-height: 35px;
-}
-.litera{
-width:35px;
-height: 35px;
-
-}
-#przycisk-powrotu{
-font-size: 26px;
-max-width:70%;
-}
-#kategoria-info{
-font-size: 26px;
-
-}
-#plansza{
-font-size: 30px;
-margin: 30px auto;
-}
-#wybor-kategorii h2 {
-  font-size: 40px;
-  padding: 10px;
-  margin: 20px;
-}
-.przycisk-kategorii {
- font-size: 26px;
-}
-
-
-
-
+  #pojemnik {
+    width: 100%;
+    height: min-content;
+  }
+  #alfabet {
+    display: block;
+    float: inherit;
+    min-width: 427px;
+    width: min-content;
+    margin: 30px auto;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .litera {
+    width: 35px;
+    height: 35px;
+  }
+  #przycisk-powrotu {
+    font-size: 26px;
+    max-width: 70%;
+  }
+  #kategoria-info {
+    font-size: 26px;
+  }
+  #plansza {
+    font-size: 30px;
+    margin: 30px auto;
+  }
+  #wybor-kategorii h2 {
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .przycisk-kategorii {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 480px) {
-
-#alfabet{
-  display: block;
-float:inherit;
-min-width: 357px;
-width: min-content;
-margin: 30px auto;
-font-size: 25px;
-line-height: 25px;
-max-height: 240px;
-min-height: 240px;
-}
-.litera{
-width:25px;
-height: 25px;
-
-}
- #szubienica{
-  display:block;
-float:inherit;
-margin: 30px auto;
-width:100%;
- }
-#start h1 {
+  #alfabet {
+    display: block;
+    float: inherit;
+    min-width: 357px;
+    width: min-content;
+    margin: 30px auto;
+    font-size: 25px;
+    line-height: 25px;
+    max-height: 240px;
+    min-height: 240px;
+  }
+  .litera {
+    width: 25px;
+    height: 25px;
+  }
+  #szubienica {
+    display: block;
+    float: inherit;
+    margin: 30px auto;
+    width: 100%;
+  }
+  #start h1 {
     max-width: 100%;
     font-size: 60px;
-}
-#start button {
+  }
+  #start button {
     font-size: 40px;
-}
-#przycisk-powrotu{
-font-size: 26px;
-max-width:70%;
-margin-top: 0;
-margin-bottom: 30px;
-margin-top: 20px;
-}
-#pojemnik{
-  height: min-content;
-}
+  }
+  #przycisk-powrotu {
+    font-size: 26px;
+    max-width: 70%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  #pojemnik {
+    height: min-content;
+  }
 
-#kategoria-info{
-font-size: 26px;
-
-}
-#wybor-kategorii h2 {
-  font-size: 40px;
-  padding: 10px;
-  margin: 20px;
-}
-.przycisk-kategorii {
- font-size: 26px;
-}
-
-
-
+  #kategoria-info {
+    font-size: 26px;
+  }
+  #wybor-kategorii h2 {
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .przycisk-kategorii {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 380px) {
-#pojemnik{
-  height: min-content;
-}
-#alfabet{
-  display: block;
-float:inherit;
-min-width: 322px;
-width: min-content;
-margin: 0 auto 30px;
-font-size: 20px;
-line-height: 20px;
-min-height: 220px;
-}
-.litera{
-width: 20px;px;
-height: 20px;
-
-}
- #szubienica{
-  display:block;
-float:inherit;
-margin: 30px auto;
-width:100%;
-height: 210px;
-min-height: 210px;
- }
-#start h1 {
+  #pojemnik {
+    height: min-content;
+  }
+  #alfabet {
+    display: block;
+    float: inherit;
+    min-width: 322px;
+    width: min-content;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 220px;
+  }
+  .litera {
+    width: 20px;
+    height: 20px;
+  }
+  #szubienica {
+    display: block;
+    float: inherit;
+    margin: 30px auto;
+    width: 100%;
+    height: 210px;
+    min-height: 210px;
+  }
+  #start h1 {
     max-width: 100%;
     font-size: 46px;
-}
-#start button {
+  }
+  #start button {
     font-size: 30px;
-}
-#wybor-kategorii {
-  max-width: 100%;
-}
-   #wybor-kategorii h2 {
+  }
+  #wybor-kategorii {
+    max-width: 100%;
+  }
+  #wybor-kategorii h2 {
     font-size: 40px;
     margin: 0 auto 20px auto;
-}
-.przycisk-kategorii {
- font-size: 26px;
-}
-#kategoria-info{
-font-size: 26px;
-
-}
-#plansza{
-font-size: 30px;
-margin: 30px auto;
-}
-#przycisk-powrotu{
-font-size: 26px;
-max-width:70%;
-}
-
+  }
+  .przycisk-kategorii {
+    font-size: 26px;
+  }
+  #kategoria-info {
+    font-size: 26px;
+  }
+  #plansza {
+    font-size: 30px;
+    margin: 30px auto;
+  }
+  #przycisk-powrotu {
+    font-size: 26px;
+    max-width: 70%;
+  }
 }
