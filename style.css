@@ -287,10 +287,12 @@ body
    #wybor-kategorii {
     margin-top: 0;
 }
-   #wybor-kategorii h2 {
-    font-size: 80px;
-    margin: 0 auto 20px auto;
+#wybor-kategorii h2 {
+  font-size: 40px;
+  padding: 10px;
+  margin: 20px;
 }
+
 
 #specjalistyczne-kategorie{
 text-align: center;
@@ -299,7 +301,7 @@ text-align: center;
   min-width: 300px;
   width: min-content;
   max-width: 100%;
-  font-size: 40px;
+  font-size: 26px;
   margin: 10px 0;
 }
 .fog-layer{
@@ -380,6 +382,14 @@ font-size: 26px;
 font-size: 30px;
 margin: 30px auto;
 }
+#wybor-kategorii h2 {
+  font-size: 40px;
+  padding: 10px;
+  margin: 20px;
+}
+.przycisk-kategorii {
+ font-size: 26px;
+}
 
 
 
@@ -430,6 +440,14 @@ margin-top: 20px;
 #kategoria-info{
 font-size: 26px;
 
+}
+#wybor-kategorii h2 {
+  font-size: 40px;
+  padding: 10px;
+  margin: 20px;
+}
+.przycisk-kategorii {
+ font-size: 26px;
 }
 
 
