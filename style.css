@@ -308,7 +308,7 @@ text-align: center;
 }
 #pojemnik{
   width:100%;
-  height: 98vh;
+  height: min-content;
 max-width: 100%;
 
 
@@ -352,7 +352,7 @@ margin-bottom: 30px;
 @media screen and (max-width: 600px) {
 #pojemnik{
   width:100%;
-  height: 98vh;
+  height: min-content;
 }
 #alfabet{
   display: block;
@@ -395,6 +395,8 @@ width: min-content;
 margin: 30px auto;
 font-size: 25px;
 line-height: 25px;
+max-height: 240px;
+min-height: 240px;
 }
 .litera{
 width:25px;
@@ -417,9 +419,12 @@ width:100%;
 #przycisk-powrotu{
 font-size: 26px;
 max-width:70%;
+margin-top: 0;
+margin-bottom: 30px;
+margin-top: 20px;
 }
 #pojemnik{
-  height: 98vh;
+  height: min-content;
 }
 
 #kategoria-info{
@@ -428,10 +433,11 @@ font-size: 26px;
 }
 
 
+
 }
 @media screen and (max-width: 380px) {
 #pojemnik{
-  height: 98vh;
+  height: min-content;
 }
 #alfabet{
   display: block;
