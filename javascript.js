@@ -2211,6 +2211,11 @@ function rozpocznijGreZKategoria(nazwa, typ) {
     '<span style="color:#00C000;">Kategoria:</span> ' + nazwa;
   document.getElementById("szubienica").innerHTML = '<img src="s0.jpg" alt="" />';
   start();
+  window.scrollTo({
+  top: 0,
+  behavior: 'smooth' // możesz też użyć 'auto' dla natychmiastowego scrolla
+});
+
 }
 
 // 🔷 Restart gry z tą samą kategorią
