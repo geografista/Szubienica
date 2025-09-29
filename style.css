@@ -308,6 +308,7 @@ text-align: center;
 }
 #pojemnik{
   width:100%;
+  height: 98vh;
 max-width: 100%;
 
 
@@ -350,6 +351,8 @@ margin-bottom: 30px;
 }
 @media screen and (max-width: 600px) {
 #pojemnik{
+  width:100%;
+  height: 98vh;
 }
 #alfabet{
   display: block;
@@ -365,14 +368,25 @@ width:35px;
 height: 35px;
 
 }
+#przycisk-powrotu{
+font-size: 26px;
+max-width:70%;
+}
+#kategoria-info{
+font-size: 26px;
+
+}
+#plansza{
+font-size: 30px;
+margin: 30px auto;
+}
 
 
 
 
 }
 @media screen and (max-width: 480px) {
-#pojemnik{
-}
+
 #alfabet{
   display: block;
 float:inherit;
@@ -399,6 +413,18 @@ width:100%;
 }
 #start button {
     font-size: 40px;
+}
+#przycisk-powrotu{
+font-size: 26px;
+max-width:70%;
+}
+#pojemnik{
+  height: 98vh;
+}
+
+#kategoria-info{
+font-size: 26px;
+
 }
 
 
@@ -451,8 +477,7 @@ min-height: 210px;
 font-size: 26px;
 
 }
-#plansza
-{
+#plansza{
 font-size: 30px;
 margin: 30px auto;
 }
