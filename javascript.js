@@ -537,7 +537,7 @@ const bazaDanych = {
   "Mount Everest",
   "Nil",
   "Andy",
-  "Kilimandzaro",
+  "Kilimandżaro",
   "Ganges",
   "Missisipi",
   "Alpy",
